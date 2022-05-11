@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(72, 111, 240);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#game {
+    border-top: 2px dashed black;
+    background-color: white;
+}
+
+.hautdepage {
+    display: flex;
+    margin-left: 1%;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+button {
+    height: 10%;
+    padding: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+    border-color: black;
+}

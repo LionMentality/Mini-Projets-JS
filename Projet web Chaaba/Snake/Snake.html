@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Snake.css">
+    <title>Snake</title>
+</head>
+<body>
+    <div class="description">
+        <h1>== LE SNAKE ==</h1>
+        <p>Les serpents, de nom scientifique Serpentes, forment un sous-ordre de squamates carnivores au corps très allongé et dépourvus de membres apparents. Il s'agit plus précisément de vertébrés amniotes caractérisés par un tégument recouvert d'écailles... Mais on s'en fout de tout ça, voici le <strong> JEU DU SERPENT </strong>! <br> 
+        - Appuyez sur Espace pour lancer le jeu. <br> - Utilisez les touches directionnelles afin de bouger le serpent. <br> - Mettez le son pour plus d'immersion <br> - Ce serpent a une capacité unique, il peut revenir en arrière grâce à sa flexibilité ! <br> - Un des 2 fruits est empoisonnés mais nos services de renseignements n'ont pas pu identifier sa couleur.</p>
+    </div>
+    <div class="jeu">
+        <h1>Score : <span class="score"> 0 </span></h1>
+        <button type="button" onclick="history.go(0)">Relancer une partie</button>
+        <canvas id="game" width="500" height="500"></canvas>
+    </div>
+    <script src="Js/Poison.js"></script>
+    <script src="Js/Food.js"></script>
+    <script src="Js/Block.js"></script>
+    <script src="Js/Snake.js"></script>
+    <script src="Js/Game.js"></script>
+    <script>
+        document.onkeypress=function(e){e=e||window.event;
+        var key=e.which?e.which:event.keyCode;
+        if (key==32) start();}
+    </script>
+</body>
+</html>

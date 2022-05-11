@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Formulaire.css">
+    <title>Formulaire</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+</head>
+<body>
+    <h1>== Formulaire et tableau ==</h1>
+    <form action="">
+        <div class="champs">
+            <div class="aremplir">
+                <label id="pseudolabel" for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo">
+                <p id="pseudoerreur">*Votre pseudo doit comporter 20 caractères maximum</p>
+                <label for="age" id="agelabel">Age :</label>
+                <input type="text" id="age" name="age">
+                <p id="ageerreur">*Votre âge ne doit comporter que des chiffres</p>
+                <label for="motdepasse" id="motdepasselabel">Mot de passe :</label>
+                <input type="password" id="motdepasse" name="motdepasse">
+                <p id="mdperreur">*Votre mot de passe n'est pas le même</p>
+                <label for="motdepassecheck" id="motdepassechecklabel">Confirmation du mot de passe :</label>
+                <input type="password" id="motdepassecheck" name="motdepassecheck">
+                <p id="mdpcheckerreur">*Votre mot de passe n'est pas le même</p>
+                <p id="messerreur">Veuillez remplir les champs obligatoires notés par une *</p>
+            </div>
+            <button type="button" id="envoyer" onclick="prenagepseudo(); prenageage(); verificationmdp(); validation(); dateenvoi(); identifiant(); remplissageidentifiant(); problemeremplissage();">Envoyer</button>
+        </div>
+    </form>
+    <div id="tableau">
+        <table id="hey">
+            <tr id="categorie">
+                <th>ID</th>
+                <th>Pseudo</th>
+                <th>Age</th>
+                <th>Date et heure d'envoi</th>
+                <th>Hash du mot de passe</th>
+                <th></th>
+            </tr>
+            <tr id="save">
+                <td id="id-save"> </td>
+                <td id="pseudo-save"> </td>
+                <td id="age-save"> </td>
+                <td id="date-save"> </td>
+                <td id="hash-save"></td>
+                <td id="button"><button id="del" type="button" onclick="vidange();">Effacer</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="Js/Formulaire.js"></script>
+</body>
+</html>

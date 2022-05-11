@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(72, 111, 240);
+}
+
+input {
+    border-radius: 2rem;
+    padding: 5px;
+    border-color: black;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(233, 202, 162);
+    border: 3px solid rgb(72, 111, 240);
+    outline: 3px solid black;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+input{
+    margin:5px;
+    width: 100%;
+}
+
+form button{
+    width: 50%;
+    padding: 10px;
+}
+
+button {
+    border-radius: 2rem;
+    border-color: black;
+    cursor: pointer;
+}
+
+#tableau button{
+    padding: 10px;
+    border-color: rgb(72, 111, 240);
+}
+
+#tableau{
+    display: flex;
+    justify-content: center;
+}
+
+.champs{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+}
+
+p{
+    visibility:hidden;
+    color: red;
+    font-size: small;
+}
+
+th, td{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}

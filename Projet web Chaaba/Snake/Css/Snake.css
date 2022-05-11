@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(72, 111, 240);
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    background-image: url(../Images/serpent-animaux-vert-lisse-reptile-fond-d-ecran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 2rem;
+    border:2px solid;
+    border-color: rgb(72, 111, 240);
+}
+
+p {
+    font-size: x-large;
+}
+
+h1{
+    text-align: center;
+}
+
+.jeu{
+    display: flex;
+    flex-direction: column;
+}
+
+.jeu button{
+    padding: 8px;
+    font-size: large;
+    border-color: rgb(72, 111, 240);
+    cursor: pointer;
+}
+
+.jeu h1 {
+    background-color : aliceblue;
+    padding: 10px;
+    border-radius: 2rem;
+    border:2px solid;
+    border-color: rgb(72, 111, 240);
+}
+
+#game {
+    border: 2px solid rgb(72, 111, 240);
+    background-image: url(../Images/sable.jpg);
+}
+

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv{
+    box-shadow: 0 25px 25px black; 
+    background-color: aliceblue;
+    margin:40px;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    border: 2px solid rgb(113, 174, 253);  
+}
+
+h1{
+    font-size: xx-large;
+    color: rgb(72, 111, 240);
+}
+
+header{
+    display: flex;
+    border-bottom: 2px solid rgb(113, 174, 253);  
+    border-bottom-right-radius: 1rem;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.coordonnes{
+    width: 80%;
+}
+
+.coordonnes ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.tete{
+    width: auto;
+    height: 160px;
+    border-radius: 2rem;
+    padding: 5px;
+}
+
+.donnees{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    width: 60%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.formation, .centre, .competence, .experiencepro, .qualite{
+    border-bottom: 2px solid rgb(113, 174, 253);
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.information p, .information nav{
+    margin-left: 200px;
+    position: relative;
+    bottom: 15px;
+}
+
+.information li{
+    padding: 5px;
+}
+
+progress {
+    -webkit-appearance: none;
+}
+  
+::-webkit-progress-value {
+    background-color: rgb(72, 111, 240);
+    border-radius: 1rem;
+}
+
+::-webkit-progress-bar {
+    background-color: rgb(113, 174, 253);
+    border-radius: 1rem;
+}
